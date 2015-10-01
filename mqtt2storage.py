@@ -158,7 +158,12 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect(mqtt_host, mqtt_port, 60)
+try:
+    client.connect(mqtt_host, mqtt_port, 60)
+except Exception, error:
+    logger.info("Exception from mqtt.client.connect: " + str(error))
+else:
+    logger.info('MQTT connected successfull')
 
 # Blocking call that processes network traffic, dispatches callbacks and
 # handles reconnecting.
