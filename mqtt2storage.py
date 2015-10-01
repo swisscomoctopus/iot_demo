@@ -22,7 +22,7 @@ import logging
 import logging.handlers
 
 # Logging handler #############################################################
-LOG_FILENAME = 'logging_mqtt2storage.out'
+LOG_FILENAME = '/data/mqtt2storage/iot_demo/logging_mqtt2storage.out'
 # Set up a specific logger with our desired output level
 logger = logging.getLogger('mqtt2storage')
 logger.setLevel(logging.INFO)
