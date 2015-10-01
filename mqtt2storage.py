@@ -37,7 +37,8 @@ logger.addHandler(handler)
 libelium_customer = 'octopus'
 
 # mongoDB variables ###########################################################
-mongodb_uri = 'mongodb://localhost:27017'
+#mongodb_uri = 'mongodb://localhost:27017'
+mongodb_uri = 'mongodb://mongo-dev:27017'
 #mongodb_uri = 'mongodb://username:password@localhost:port/db'
 
 # mqtt variables ##############################################################
@@ -48,16 +49,19 @@ mongodb_uri = 'mongodb://localhost:27017'
 # subscribe to two topics
 mqtt_topic_libelium = 'Libelium/#'
 mqtt_topic_swisscom = 'swisscom/#'
-mqtt_host = 'localhost'
+#mqtt_host = 'localhost'
+mqtt_host = 'mqtt-dev'
 mqtt_port = 1883
 #mqtt_username = ''
 #mqtt_password = ''
 
 # ElasticSearch variables #####################################################
-elasticsearch_host = 'localhost'
+#elasticsearch_host = 'localhost'
+elasticsearch_host = 'elasticsearch-dev'
 
 # InfluxDB variables ##########################################################
-influxDB_host = 'localhost'
+#influxDB_host = 'localhost'
+influxDB_host = 'influxdb-dev'
 influxDB_port = '8086'
 influxDB_username = 'root'
 influxDB_password = 'root'
