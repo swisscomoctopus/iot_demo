@@ -8,7 +8,7 @@
 #
 # Use these scripts at your own risk.
 #
-# (c) 2015 Andreas Walser
+# (c) 2015 Swisscom - Andreas Walser
 ###############################################################################
 
 import paho.mqtt.client as mqtt
